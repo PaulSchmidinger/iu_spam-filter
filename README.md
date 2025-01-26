@@ -10,11 +10,11 @@ The **Spamfilter** is a machine learning-based tool designed to detect and filte
 
 ## Project Structure
 ```
-spam-filter-project/
+iu_spam-filter/
 ├── README.md             # Project overview and documentation
 ├── .gitignore            # Ignore unnecessary files
 ├── data/                 # Data
-├── evaluation/                 # Model evaluation
+├── evaluation/           # Model evaluation
 ├── notebooks/            # Jupyter Notebooks
 ├── models/               # ML Models
 ├── reports/              # Reports and visualizations
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/PaulSchmidinger/spam-filter-project.git
+   git clone https://github.com/PaulSchmidinger/iu_spam-filter.git
    ```
 2. Navigate to the project directory:
    ```bash
