@@ -1,0 +1,76 @@
+Low-Risk Threshold Evaluation:
+              precision    recall  f1-score   support
+
+           0       0.89      1.00      0.94       990
+           1       1.00      0.88      0.93       940
+
+    accuracy                           0.94      1930
+   macro avg       0.95      0.94      0.94      1930
+weighted avg       0.95      0.94      0.94      1930
+
+High-Risk Threshold Evaluation:
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99       990
+           1       0.99      0.99      0.99       940
+
+    accuracy                           0.99      1930
+   macro avg       0.99      0.99      0.99      1930
+weighted avg       0.99      0.99      0.99      1930
+
+
+False Negatives (Spam classified as Ham):
+                                                                                                                                                   Message  Probability
+86                               For real when u getting on yo? I only need 2 more tickets and one more jacket and I'm done. I already used all my multis.     0.431241
+267                                                                                                        Not sure yet, still trying to get a hold of him     0.035046
+938                                                                                                                               K:)k.are you in college?     0.035046
+1166                                                                                                           Haha yeah I see that now, be there in a sec     0.431241
+1181                                                                                                                            I'm in chennai velachery:)     0.431241
+1207  As a SIM subscriber, you are selected to receive a Bonus! Get it delivered to your door, Txt the word OK to No: 88600 to claim. 150p/msg, EXP. 30Apr     0.035046
+
+False Positives (Ham classified as Spam):
+                                                                                                                                                                Message  Probability
+561                                                                                                                                          Hi msg me:)i'm in office..     0.507785
+717   +449071512431 URGENT! This is the 2nd attempt to contact U!U have WON £1250 CALL 09071512433 b4 050703 T&CsBCM4235WC1N3XX. callcost 150ppm mobilesvary. max£7. 50     0.554094
+860                                                                                                                             Did he just say somebody is named tampa     0.587249
+872                                                              Its going good...no problem..but still need little experience to understand american customer voice...     0.881164
+1142     I don't know u and u don't know me. Send CHAT to 86688 now and let's find each other! Only 150p/Msg rcvd. HG/Suite342/2Lands/Row/W1J6HL LDN. 18 years or over.     0.553824
+1201                                                                                                                           Otherwise had part time job na-tuition..     0.803225
+1361                                                                                                                  Yo dude guess who just got arrested the other day     0.800346
+1495                                                   It has everything to do with the weather. Keep extra warm. Its a cold but nothing serious. Pls lots of vitamin c     0.652590
+1636    You have come into my life and brought the sun ..Shiny down on me, warming my heart. Putting a constant smile on my face ... Making me feel loved and cared for     0.749796
+
+Common Words in False Negatives:
+to             5
+a              4
+in             3
+I              3
+you            2
+and            2
+I'm            2
+more           2
+are            1
+subscriber,    1
+Name: count, dtype: int64
+
+Common Words in False Positives:
+and      4
+the      4
+to       4
+my       3
+u        2
+know     2
+don't    2
+have     2
+on       2
+is       2
+Name: count, dtype: int64
+
+Average Message Length in False Negatives: 68.16666666666667
+Average Message Length in False Positives: 94.0
+
+Exclamation Marks in False Negatives: 1
+Exclamation Marks in False Positives: 3
+
+Uppercase Words in False Negatives: 3
+Uppercase Words in False Positives: 10

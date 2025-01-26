@@ -1,0 +1,59 @@
+Dataset Overview:
+   Label                                            Message  \
+0      0  Go until jurong point, crazy.. Available only ...   
+1      0                      Ok lar... Joking wif u oni...   
+2      1  Free entry in 2 a wkly comp to win FA Cup fina...   
+3      0  U dun say so early hor... U c already then say...   
+4      0  Nah I don't think he goes to usf, he lives aro...   
+
+                                   Processed Message  Message Length  
+0  go jurong point crazi avail bugi n great world...             111  
+1                              ok lar joke wif u oni              29  
+2  free entri 2 wkli comp win fa cup final tkt 21...             155  
+3                u dun say earli hor u c alreadi say              49  
+4               nah think goe usf live around though              61  
+
+Total Rows:
+(5572, 4)
+
+Missing Values:
+Label                0
+Message              0
+Processed Message    0
+Message Length       0
+dtype: int64
+
+Class Distribution before Sampling:
+Label
+ham     4825
+spam     747
+Name: count, dtype: int64
+
+Class Distribution (%) before Sampling:
+Label
+ham     0.865937
+spam    0.134063
+Name: proportion, dtype: float64
+
+Class Balance After Oversampling:
+Label
+0    4825
+1    4825
+Name: count, dtype: int64
+
+Message Length Statistics:
+count    5572.000000
+mean       80.489950
+std        59.942907
+min         2.000000
+25%        36.000000
+50%        62.000000
+75%       122.000000
+max       910.000000
+Name: Message Length, dtype: float64
+
+Top 20 Words in Spam Messages:
+[('call', 365), ('free', 219), ('2', 176), ('txt', 169), ('u', 145), ('ur', 144), ('text', 139), ('mobil', 135), ('4', 122), ('stop', 118), ('claim', 115), ('repli', 112), ('prize', 94), ('get', 88), ('tone', 74), ('servic', 72), ('send', 71), ('new', 69), ('nokia', 68), ('award', 66)]
+
+Top 20 Words in Ham Messages:
+[('u', 1006), ('go', 420), ('get', 359), ('gt', 318), ('lt', 316), ('2', 313), ('come', 298), ('call', 293), ('ok', 262), ('know', 249), ('ur', 247), ('love', 247), ('like', 246), ('got', 245), ('good', 232), ('time', 229), ('day', 218), ('want', 213), ('4', 178), ('need', 175)]
